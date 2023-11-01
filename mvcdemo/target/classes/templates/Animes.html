@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<body>
+<div>
+    <h1>Juliana</h1>
+    <p>Lista de animes.</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Episódio</th>
+            <th>Gênero</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="anime : ${animes}">
+            <td th:text="${anime.Nome}"</td>
+            <td th:text="${anime.Episodios}"</td>
+            <td th:text="${anime.Genero}"</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
